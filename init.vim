@@ -31,7 +31,8 @@ let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
   Plug 'liuchengxu/vista.vim'
 
   " find & replace
-  Plug 'brooth/far.vim', { 'on': ['F', 'Far', 'Fardo'] }
+  Plug 'nvim-lua/plenary.nvim' " nvim-spectre dep
+  Plug 'nvim-pack/nvim-spectre'
 
   " markdown
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -51,6 +52,7 @@ let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
   "Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
   Plug 'RRethy/vim-illuminate'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'kyazdani42/nvim-web-devicons'
 
   " status line
   Plug 'raining888/eleline.vim'
