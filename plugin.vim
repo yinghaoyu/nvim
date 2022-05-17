@@ -75,7 +75,7 @@
   let g:scrollstatus_size = 15
 " }}
 
-" far.vim {{
+" nvim-spectre {{
   nnoremap <LEADER>f <cmd>lua require('spectre').open()<CR>
   vnoremap <LEADER>f <cmd>lua require('spectre').open_visual()<CR>
 " }}
