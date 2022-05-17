@@ -76,10 +76,8 @@
 " }}
 
 " far.vim {{
-  noremap <LEADER>f :F  **/*<left><left><left><left><left>
-  let g:far#mapping = {
-      \ "replace_undo" : ["l"],
-      \ }
+  nnoremap <LEADER>f <cmd>lua require('spectre').open()<CR>
+  vnoremap <LEADER>f <cmd>lua require('spectre').open_visual()<CR>
 " }}
 
 " markdown-preview {{
