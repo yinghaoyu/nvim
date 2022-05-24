@@ -63,7 +63,9 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "json",
     "java",
-    "python"
+    "python",
+    "c",
+    "cpp"
   ],
   "explorer.width": 38,
   "explorer.quitOnOpen": true,
