@@ -4,7 +4,7 @@
 " | |  | | | |   | |\  | \ V /  | || |  | |  _ <| |
 " |_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
 
-" Author: @raining888
+" Author: @yinghaoyu
 
 " auto install {{
   " for first time
