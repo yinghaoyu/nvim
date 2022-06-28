@@ -180,6 +180,11 @@
   nnoremap <LEADER>gj :GitGutterNextHunk<CR>
 " }}
 
+" agit {{
+  nnoremap <LEADER>gl :Agit<CR>
+  let g:agit_no_default_mappings = 1
+" }}
+
 " goyo {{
   map <LEADER>gy :Goyo<CR>
 " }}

@@ -63,6 +63,7 @@ let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
 
   " git
   Plug 'airblade/vim-gitgutter'
+  Plug 'cohama/agit.vim'  " for git log
 
   " writting
   Plug 'junegunn/goyo.vim'
