@@ -19,7 +19,7 @@
   endif
 " }}
 
-let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
+" let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
 
 " plugin menu {{
   call plug#begin('$HOME/.config/nvim/plugged')
@@ -49,7 +49,7 @@ let g:plug_url_format='https://hub.fastgit.xyz/%s.git'
   " visual enhancement
   Plug 'luochen1990/rainbow'
   "Plug 'mg979/vim-xtabline'
-  "Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+  Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
   Plug 'RRethy/vim-illuminate'
   Plug 'ryanoasis/vim-devicons'
   Plug 'kyazdani42/nvim-web-devicons'
