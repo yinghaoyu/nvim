@@ -51,7 +51,7 @@
   "set colorcolumn=100
   set updatetime=100 " backup every 100ms
   set virtualedit=block " allow virtual editing in visual block mode
-  " set mouse=a " not recommand
+  set mouse= " mouse mode disabled
   " set spell " z=, ctrl+x+s, [s,  ]s
   set nohlsearch
 
