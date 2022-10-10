@@ -2,6 +2,7 @@
   set autochdir
   set background=dark
   set encoding=utf-8
+  set fileencodings=ucs-bom,utf-8,gbk,gb2312,default,latin1
 " }}
 
 " dress up {{
