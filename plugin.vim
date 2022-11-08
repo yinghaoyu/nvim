@@ -10,6 +10,7 @@
       \ 'coc-translator',
       \ 'coc-explorer',
       \ 'coc-yank',
+      \ 'coc-go',
       \ ]
 
   " use tab for trigger completion with characters ahead and navigate.
