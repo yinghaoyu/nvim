@@ -65,7 +65,8 @@
     "java",
     "python",
     "c",
-    "cpp"
+    "cpp",
+    "go"
   ],
   "explorer.width": 38,
   "explorer.quitOnOpen": true,
