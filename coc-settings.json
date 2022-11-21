@@ -6,6 +6,10 @@
   "coc.preferences.messageLevel": "error",
   "coc.source.around.firstMatch": false,
   "coc.source.buffer.firstMatch": false,
+  "suggest.invalidInsertCharacters": [
+    "\r",
+    "\n"
+  ],
   "suggest.detailMaxLength": 60,
   "suggest.minTriggerInputLength": 2,
   "suggest.noselect": true,
