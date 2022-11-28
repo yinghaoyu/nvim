@@ -46,6 +46,10 @@
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
 
+  " snippet placeholder moving
+  let g:coc_snippet_prev = "<c-h>"
+  let g:coc_snippet_next = "<c-l>"
+
   " file explorer
   nmap <leader>e :CocCommand explorer<CR>
 
