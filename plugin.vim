@@ -70,6 +70,7 @@
 
   " symbol renaming.
   nmap <leader>rn <Plug>(coc-rename)
+  vmap <leader>cf <Plug>(coc-format-selected)
 " }}
 
 " vista.vim {{
