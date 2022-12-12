@@ -71,7 +71,7 @@ Use the arrow keys to resize the current window.
 |-------------|------------------|
 | `t` `b`     | Create a new tab |
 | `t` `h`     | Go one tab left  |
-| `t` `l`     | Go One tab right |
+| `t` `l`     | Go one tab right |
 | `t` `m` `h` | Move tab left    |
 | `t` `m` `l` | Move tab right   |
 
