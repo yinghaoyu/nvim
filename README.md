@@ -1,5 +1,7 @@
 # The awesome neovim configuation
 
+<center><img src="./demo.png"></center>
+
 ## Brief
 
 Clean and modularized neovim config files.
