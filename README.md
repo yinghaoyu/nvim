@@ -14,15 +14,15 @@ Clean and modularized neovim config files.
 - Install `ctag` for function/class/variable list
 - Install `figlet` for inputing text ASCII art
 
-## Keyboard Shortcuts
+## 1 Keyboard Shortcuts
 
-### Basic Mappings
+### 1.1 Basic Mappings
 
 **`Q`** : quits current window (same as command `:q` in vanilla vim)
 
 **`S`** : saves the current file (same as command `:w` in vanilla vim)
 
-### Additional Cursor Movement
+### 1.2 Additional Cursor Movement
 
 | Shortcut   | Action                                                    | Equivalent |
 |------------|-----------------------------------------------------------|------------|
@@ -36,9 +36,9 @@ Clean and modularized neovim config files.
 | `W`        | Move cursor five words forward                            | `5w`       |
 | `B`        | Move cursor five words forward                            | `5b`       |
 
-## Window Management
+## 2 Window Management
 
-### Create Window Through Split Screen
+### 2.1 Create Window Through Split Screen
 
 | Shortcut    | Action                                                                      |
 |-------------|-----------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ Clean and modularized neovim config files.
 | `c` `r` `v` | Rotate splits and arrange splits vertically                                 |
 | `c` `r` `h` | Rotate splits and arrange splits horizontally                               |
 
-### Moving the Cursor Between Different Windows
+### 2.2 Moving the Cursor Between Different Windows
 
 | Shortcut      | Action                         |
 |---------------|--------------------------------|
@@ -61,11 +61,11 @@ Clean and modularized neovim config files.
 | `SPACE` + `k` | Move cursor one window up      |
 | `SPACE` + `j` | Move cursor one window down    |
 
-### Resizing Different Windows
+### 2.3 Resizing Different Windows
 
 Use the arrow keys to resize the current window.
 
-## Tab Management
+## 3 Tab Management
 
 | Shortcut    | Action           |
 |-------------|------------------|
@@ -75,7 +75,7 @@ Use the arrow keys to resize the current window.
 | `t` `m` `h` | Move tab left    |
 | `t` `m` `l` | Move tab right   |
 
-## Plugins Keybindings
+## 4 Plugins Keybindings
 
 TODO
 
