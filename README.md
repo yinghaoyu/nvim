@@ -1,4 +1,4 @@
-# The awesome neovim configuation
+# The Elegant Neovim Configuation
 
 <center><img src="./demo.png"></center>
 
