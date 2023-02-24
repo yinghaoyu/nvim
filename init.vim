@@ -67,6 +67,7 @@
 
   " writting
   Plug 'junegunn/goyo.vim'
+  Plug 'reedes/vim-wordy'
 
   call plug#end()
 " }}
