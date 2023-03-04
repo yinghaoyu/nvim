@@ -17,6 +17,7 @@
 " editor behavior {{
   "set exrc
   "set secure
+  "set clipboard=unnamedplus " clipboard share with system
   set cursorline
   set number
   set relativenumber
