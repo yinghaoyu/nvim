@@ -145,7 +145,7 @@ Use the arrow keys to resize the current window.
 
 #### [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 
-Press `ga` + **symbol** in normal or visual mode to align text based on **symbol**
+Press `ga` + **symbol** in normal or visual mode to align text based on **symbol**.
 
 #### [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
 
@@ -172,11 +172,11 @@ Press `SPACE` `f` to search or replace in cwd.
 
 #### [goyo - Work without distraction](https://github.com/junegunn/goyo.vim)
 
-Press `g` `y` to toggle Goyo
+Press `g` `y` to toggle Goyo.
 
 #### [figlet](https://github.com/cmatsuoka/figlet)
 
-Press `tx` and enter your text
+Press `tx` and enter your text.
 
 `tx Hello<Enter>`
 
@@ -218,9 +218,9 @@ Press `tx` and enter your text
   | `,l`         | --------            |
   | `,t`         | current time        |
 
-`,f` to go to the next `<++>` (placeholder)
+`,f` to go to the next `<++>` (placeholder).
 
-`,w` to go to the next `<++>` (placeholder) and then press `Enter` for you
+`,w` to go to the next `<++>` (placeholder) and then press `Enter` for you.
 
 ## Reference
 
