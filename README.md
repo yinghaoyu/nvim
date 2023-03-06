@@ -145,7 +145,7 @@ Use the arrow keys to resize the current window.
 
 #### [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 
-Press `ga` + **symbol** in normal or visual mode to align text based on **symbol**.
+Press `g` `a` + **symbol** in normal or visual mode to align text based on **symbol**.
 
 #### [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
 
@@ -176,7 +176,7 @@ Press `g` `y` to toggle Goyo.
 
 #### [figlet](https://github.com/cmatsuoka/figlet)
 
-Press `tx` and enter your text.
+Press `t` `x` and enter your text.
 
 `tx Hello<Enter>`
 
