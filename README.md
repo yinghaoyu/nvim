@@ -192,31 +192,31 @@ Press `tx` and enter your text.
 
 #### Markdown
 
-  | Shortcut     | What it creates     |
-  |--------------|---------------------|
-  | `,n`         | ---                 |
-  | `,b`         | **Bold** text       |
-  | `,s`         | ~~sliced~~ text     |
-  | `,i`         | *italic* text       |
-  | `,d`         | `code block`        |
-  | `,c`         | big `block of code` |
-  | `,m`         | - [ ] check mark    |
-  | `,p`         | picture             |
-  | `,k`         | [link]()            |
-  | `,1`         | # H1                |
-  | `,2`         | ## H2               |
-  | `,3`         | ### H3              |
-  | `,4`         | #### H4             |
-  | `,5`         | ##### H5            |
-  | `,6`         | ###### H6           |
-  | `SPACE` `m1` | Turn to # H1        |
-  | `SPACE` `m2` | Turn to ## H2       |
-  | `SPACE` `m3` | Turn to ### H3      |
-  | `SPACE` `m4` | Turn to #### H4     |
-  | `SPACE` `m5` | Turn to ##### H6    |
-  | `SPACE` `m5` | Turn to ###### H6   |
-  | `,l`         | --------            |
-  | `,t`         | current time        |
+| Shortcut     | What it creates     |
+|--------------|---------------------|
+| `,n`         | ---                 |
+| `,b`         | **Bold** text       |
+| `,s`         | ~~sliced~~ text     |
+| `,i`         | *italic* text       |
+| `,d`         | `code block`        |
+| `,c`         | big `block of code` |
+| `,m`         | - [ ] check mark    |
+| `,p`         | picture             |
+| `,k`         | [link]()            |
+| `,1`         | # H1                |
+| `,2`         | ## H2               |
+| `,3`         | ### H3              |
+| `,4`         | #### H4             |
+| `,5`         | ##### H5            |
+| `,6`         | ###### H6           |
+| `SPACE` `m1` | Turn to # H1        |
+| `SPACE` `m2` | Turn to ## H2       |
+| `SPACE` `m3` | Turn to ### H3      |
+| `SPACE` `m4` | Turn to #### H4     |
+| `SPACE` `m5` | Turn to ##### H6    |
+| `SPACE` `m5` | Turn to ###### H6   |
+| `,l`         | --------            |
+| `,t`         | current time        |
 
 `,f` to go to the next `<++>` (placeholder).
 
