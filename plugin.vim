@@ -1,3 +1,9 @@
+" plug.vim {{
+  noremap <LEADER>pc :PlugClean<CR>
+  noremap <LEADER>pi :PlugInstall<CR>
+  noremap <LEADER>pu :PlugUpdate<CR>
+" }}
+
 " coc.nvim {{
   let g:coc_global_extensions = [
       \ 'coc-json',
@@ -38,9 +44,7 @@
   nmap <silent> g] <Plug>(coc-diagnostic-next)
 
   " go to code navigation.
-  nmap <silent> gd <Plug>(coc-definition)
-  nmap <silent> gD <Plug>(coc-type-definition)
-  nmap <silent> gi <Plug>(coc-implementation)
+  nmap <silent> gD <Plug>(coc-definition)
   nmap <silent> gh <Plug>(coc-references)
 
   " snippet placeholder moving
@@ -134,6 +138,10 @@
 
 " tabular {{
   vmap ga :Tabularize /
+" }}
+
+" suda.vim {{
+  noremap <A-s> :SudaWrite<CR>
 " }}
 
 " rainbow {{

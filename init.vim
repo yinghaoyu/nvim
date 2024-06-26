@@ -45,6 +45,7 @@
   " editor enhancement
   Plug 'godlygeek/tabular'
   Plug 'tpope/vim-surround'
+  Plug 'lambdalisue/vim-suda'
 
   " visual enhancement
   Plug 'luochen1990/rainbow'

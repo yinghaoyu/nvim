@@ -1,3 +1,20 @@
+" clipboard check {{
+if has('clipboard') && !empty($WSL_DISTRO_NAME)
+  let g:clipboard = {
+    \ 'name': 'win32yank-wsl',
+    \ 'copy': {
+      \ '+': 'win32yank.exe -i --crlf',
+      \ '*': 'win32yank.exe -i --crlf',
+    \ },
+    \ 'paste': {
+      \ '+': 'win32yank.exe -o --lf',
+      \ '*': 'win32yank.exe -o --lf',
+    \ },
+    \ 'cache_enabled': 0,
+    \ }
+endif
+" }}
+
 " editor setup {{
   set autochdir
   set background=dark
@@ -17,7 +34,7 @@
 " editor behavior {{
   "set exrc
   "set secure
-  "set clipboard=unnamedplus " clipboard share with system
+  set clipboard=unnamedplus " clipboard share with system
   set cursorline
   set number
   set relativenumber
@@ -50,10 +67,10 @@
   set completeopt=longest,noinsert,menuone,noselect,preview
   set lazyredraw " scrolling faster
   set visualbell " visual instead of bell
-  "set colorcolumn=100
+  " set colorcolumn=100
   set updatetime=100 " backup every 100ms
   set virtualedit=block " allow virtual editing in visual block mode
-  set mouse= " mouse mode disabled
+  " set mouse= " mouse mode disabled
   " set spell " z=, ctrl+x+s, [s,  ]s
   set nohlsearch
 

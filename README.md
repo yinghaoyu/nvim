@@ -2,7 +2,7 @@
 
 <center><img src="./demo.png"></center>
 
-## Brief
+## 📰 Brief
 
 Clean and modularized neovim config files.
 
@@ -10,15 +10,17 @@ Clean and modularized neovim config files.
 
 - NeoVim 0.6.0+
 
-### Tools
+### 🔧 Tools
 
 - Install `nodejs` for coc extension
 - Install `ctag` for function/class/variable list
 - Install `figlet` for inputing text ASCII art
+- Install [`win32yank`](https://github.com/equalsraf/win32yank) for WSL
+  - Download it on Windows and add it to PATH of Windows.
 
-## 1 Keyboard Shortcuts
+## 🗺️ Keyboard Shortcuts
 
-### 1.1 Basic Mappings
+### Basic Mappings
 
 | Shortcut | Effect            |
 |----------|-------------------|
@@ -26,7 +28,7 @@ Clean and modularized neovim config files.
 | `<A-q>`  | Auit all windows  |
 | `C-s`    | save current file |
 
-### 1.2 Additional Cursor Movement
+### Additional Cursor Movement
 
 | Shortcut   | Effect                                                    |
 |------------|-----------------------------------------------------------|
@@ -38,9 +40,9 @@ Clean and modularized neovim config files.
 | `W`        | Move cursor five words forward                            |
 | `B`        | Move cursor five words forward                            |
 
-## 2 Window Management
+## 🗺️ Window Management
 
-### 2.1 Create Window Through Split Screen
+### Create Window Through Split Screen
 
 | Shortcut    | Effect                                                                      |
 |-------------|-----------------------------------------------------------------------------|
@@ -53,7 +55,7 @@ Clean and modularized neovim config files.
 | `c` `r` `v` | Rotate splits and arrange splits vertically                                 |
 | `c` `r` `h` | Rotate splits and arrange splits horizontally                               |
 
-### 2.2 Moving the Cursor Between Different Windows
+### Moving the Cursor Between Different Windows
 
 | Shortcut      | Effect                         |
 |---------------|--------------------------------|
@@ -63,7 +65,7 @@ Clean and modularized neovim config files.
 | `SPACE` + `k` | Move cursor one window up      |
 | `SPACE` + `j` | Move cursor one window down    |
 
-### 2.3 Resizing Different Windows
+### Resizing Different Windows
 
 | Shortcut  | Effect             |
 |-----------|--------------------|
@@ -72,7 +74,7 @@ Clean and modularized neovim config files.
 | `Alt` `k` | Resize -3          |
 | `Alt` `l` | Vertical resize -3 |
 
-## 3 Tab Management
+## 🗺️ Tab Management
 
 | Shortcut    | Effect           |
 |-------------|------------------|
@@ -82,17 +84,16 @@ Clean and modularized neovim config files.
 | `t` `m` `h` | Move tab left    |
 | `t` `m` `l` | Move tab right   |
 
-## 4 Plugins Keybindings
+## 🔌 Plugins Keybindings
 
-### 4.1 AutoCompletion
+### AutoCompletion
 
 #### [coc](https://github.com/neoclide/coc.nvim)
 
 | Shortcut        | Effect                              |
 |-----------------|-------------------------------------|
-| `gd`            | Go to definition                    |
+| `gD`            | Go to definition                    |
 | `gh`            | List references                     |
-| `gD`            | Go to type definition               |
 | `K`             | Show documentation                  |
 | `SPACE` `r` `n` | Rename a variable                   |
 | `SPACE` `c` `f` | Format selected                     |
@@ -100,7 +101,7 @@ Clean and modularized neovim config files.
 | `Tab`           | Next Cursor position in snippet     |
 | `t` `s`         | Translate word under cursor         |
 
-### 4.2 Text Editing Plugins
+### Text Editing Plugins
 
 #### [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 
@@ -120,7 +121,7 @@ Clean and modularized neovim config files.
 
 In `markdown` files, type `:Gen` then tab, you'll see your options.
 
-### 4.3 Find and Replace
+### Find and Replace
 
 #### [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 
@@ -128,7 +129,7 @@ In `markdown` files, type `:Gen` then tab, you'll see your options.
 |---------------|-------------------|
 | `SPACE` + `f` | Search or replace |
 
-### 4.4 Git Related
+### Git Related
 
 #### [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
@@ -139,7 +140,7 @@ In `markdown` files, type `:Gen` then tab, you'll see your options.
 | `SPACE` `g` `j` | Go to next git hunk               |
 | `SPACE` `g` `f` | Fold everything except hunks      |
 
-### 4.5 Others
+### Others
 
 #### [goyo](https://github.com/junegunn/goyo.vim)
 
@@ -161,7 +162,7 @@ Press `t` `x` and enter your text.
 |_| |_|\___|_|_|\___/
 ```
 
-### 4.6 Custom Snippets
+### Custom Snippets
 
 #### Markdown
 
@@ -195,7 +196,7 @@ Press `t` `x` and enter your text.
 
 `,w` to go to the next `<++>` (placeholder) and then press `Enter` for you.
 
-## Reference
+## ❤️ Thanks to
 
 - [chemzqm/vimrc](https://github.com/chemzqm/vimrc)
 - [skywind3000/vim](https://github.com/skywind3000/vim)
