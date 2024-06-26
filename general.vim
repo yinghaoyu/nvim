@@ -71,10 +71,11 @@
 " basic mappings {{
   " set <LEADER> as <SPACE>
   let g:mapleader="\<space>"
-  " save & quit
-  noremap Q :q<CR>
-  " noremap <C-q> :qa<CR>
-  noremap S :w<CR>
+  noremap <C-q> :q<CR>
+  noremap <A-q> :qa<CR>
+
+  " save file
+  noremap <C-s> :w<CR>
 
   " read the vimrc file anytime
   noremap <LEADER>rc :e $MYVIMRC<CR>
@@ -88,20 +89,11 @@
   " adjacent duplicate words
   noremap <LEADER>dw /\(\<\w\+\>\)\_s*\1
 
-  " space to Tab
-  nnoremap <LEADER>tt :%s/  /\t/g
-  vnoremap <LEADER>tt :s/  /\t/g
-
-  " tab to Space
-  nnoremap <LEADER>ts :%s/\t/  /g
-  vnoremap <LEADER>ts :s/\t/  /g
+  " toggle code fold
+  noremap <S-Tab> za
 " }}
 
 " cursor movement {{
-  " K/J keys for 5 times k/j (faster navigation)
-  noremap <silent> K 5k
-  noremap <silent> J 5j
-
   " H key: go to the start of the line
   noremap <silent> H 0
   " L key: go to the end of the line
@@ -133,10 +125,10 @@
   noremap sh :set nosplitright<CR>:vsplit<CR>
 
   " resize splits with arrow keys 
-  noremap <up> :res +5<CR>
-  noremap <down> :res -5<CR>
-  noremap <left> :vertical resize-5<CR>
-  noremap <right> :vertical resize+5<CR>
+  noremap <A-j> :resize +3<CR>
+  noremap <A-k> :resize -3<CR>
+  noremap <A-h> :vertical resize -3<CR>
+  noremap <A-l> :vertical resize +3<CR>
 
   " change screens up and down
   noremap cv <C-w>t<C-w>K
@@ -186,13 +178,13 @@
   noremap <LEADER>sw :%s//g<left><left>
 
   " compile function
-  nnoremap r :call CompileRunGcc()<CR>
+  nnoremap <LEADER>r :call RunCode()<CR>
   nnoremap <F2> :set number!<CR>:set relativenumber!<CR>
   nnoremap <F3> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
   nnoremap <F4> :set wrap!<CR>
   nnoremap <F10> :call SynGroup()<CR>
 
-  func! CompileRunGcc()
+  func! RunCode()
     exec "w"
     if &filetype == 'asm'
       exec "!nasm -f bin % -o %<.bin"

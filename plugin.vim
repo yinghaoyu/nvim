@@ -33,38 +33,34 @@
   " carriage return may add additional snippets when you have
   "inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
-  " use `[g` and `]g` to navigate diagnostics
-  " use `:CocDiagnostics` to get all diagnostics of current buffer in location
-  " list.
-  nnoremap <silent><nowait> <LEADER>dg :CocList diagnostics<cr>
-  nmap <silent> [g <Plug>(coc-diagnostic-prev)
-  nmap <silent> ]g <Plug>(coc-diagnostic-next)
+  nnoremap <silent><nowait> <LEADER>lx :CocList diagnostics<cr>
+  nmap <silent> g[ <Plug>(coc-diagnostic-prev)
+  nmap <silent> g] <Plug>(coc-diagnostic-next)
 
   " go to code navigation.
   nmap <silent> gd <Plug>(coc-definition)
-  nmap <silent> gy <Plug>(coc-type-definition)
+  nmap <silent> gD <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
-  nmap <silent> gr <Plug>(coc-references)
+  nmap <silent> gh <Plug>(coc-references)
 
   " snippet placeholder moving
-  let g:coc_snippet_prev = "<c-h>"
-  let g:coc_snippet_next = "<c-l>"
+  let g:coc_snippet_prev = "<S-Tab>"
+  let g:coc_snippet_next = "<Tab>"
 
   " file explorer
-  nmap <leader>e :CocCommand explorer<CR>
+  nmap <C-n> :CocCommand explorer<CR>
 
   " tranloator
   nmap ts <Plug>(coc-translator-p)
 
-  " use \h to show documentation in preview window.
-  nnoremap <silent> \h :call <SID>show_documentation()<CR>
-  function! s:show_documentation()
-    if (index(['vim','help'], &filetype) >= 0)
-      execute 'h '.expand('<cword>')
-    elseif (coc#rpc#ready())
+  " Use K to show documentation in preview window
+  nnoremap <silent> K :call ShowDocumentation()<CR>
+
+  function! ShowDocumentation()
+    if CocAction('hasProvider', 'hover')
       call CocActionAsync('doHover')
     else
-      execute '!' . &keywordprg . " " . expand('<cword>')
+      call feedkeys('K', 'in')
     endif
   endfunction
 

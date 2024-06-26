@@ -2,40 +2,6 @@
 
 <center><img src="./demo.png"></center>
 
-<!-- TOC GFM -->
-
-* [Brief](#brief)
-* [Requirements](#requirements)
-  - [Tools](#tools)
-* [1 Keyboard Shortcuts](#1-keyboard-shortcuts)
-  - [1.1 Basic Mappings](#11-basic-mappings)
-  - [1.2 Additional Cursor Movement](#12-additional-cursor-movement)
-* [2 Window Management](#2-window-management)
-  - [2.1 Create Window Through Split Screen](#21-create-window-through-split-screen)
-  - [2.2 Moving the Cursor Between Different Windows](#22-moving-the-cursor-between-different-windows)
-  - [2.3 Resizing Different Windows](#23-resizing-different-windows)
-* [3 Tab Management](#3-tab-management)
-* [4 Plugins Keybindings](#4-plugins-keybindings)
-  - [4.1 AutoCompletion](#41-autocompletion)
-    + [coc](#coc)
-  - [4.2 Text Editing Plugins](#42-text-editing-plugins)
-    + [vim-table-mode](#vim-table-mode)
-    + [undotree](#undotree)
-    + [vim-easy-align](#vim-easy-align)
-    + [vim-markdown-toc](#vim-markdown-toc)
-  - [4.3 Find and Replace](#43-find-and-replace)
-    + [nvim-spectre](#nvim-spectre)
-  - [4.4 Git Related](#44-git-related)
-    + [vim-gitgutter](#vim-gitgutter)
-  - [4.5 Others](#45-others)
-    + [goyo - Work without distraction](#goyo---work-without-distraction)
-    + [figlet](#figlet)
-  - [4.6 Custom Snippets](#46-custom-snippets)
-    + [Markdown](#markdown)
-* [Reference](#reference)
-
-<!-- /TOC -->
-
 ## Brief
 
 Clean and modularized neovim config files.
@@ -54,29 +20,29 @@ Clean and modularized neovim config files.
 
 ### 1.1 Basic Mappings
 
-**`Q`** : Quits current window (same as command `:q` in vanilla vim)
-
-**`S`** : Saves the current file (same as command `:w` in vanilla vim)
+| Shortcut | Effect            |
+|----------|-------------------|
+| `<C-q>`  | Quit              |
+| `<A-q>`  | Auit all windows  |
+| `C-s`    | save current file |
 
 ### 1.2 Additional Cursor Movement
 
-| Shortcut   | Action                                                    | Equivalent |
-|------------|-----------------------------------------------------------|------------|
-| `K`        | Cursor up 5 terminal lines                                | `5k`       |
-| `J`        | Cursor down 5 terminal lines                              | `5j`       |
-| `H`        | Cursor to the start of the line                           | `0`        |
-| `L`        | Cursor to the end of the line                             | `$`        |
-| `Ctrl` `k` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y` |
-| `Ctrl` `j` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e` |
-| `h`        | Move to the end of this word                              | `e`        |
-| `W`        | Move cursor five words forward                            | `5w`       |
-| `B`        | Move cursor five words forward                            | `5b`       |
+| Shortcut   | Effect                                                    |
+|------------|-----------------------------------------------------------|
+| `H`        | Cursor to the start of the line                           |
+| `L`        | Cursor to the end of the line                             |
+| `Ctrl` `k` | Move the view port up 5 lines without moving the cursor   |
+| `Ctrl` `j` | Move the view port down 5 lines without moving the cursor |
+| `h`        | Move to the end of this word                              |
+| `W`        | Move cursor five words forward                            |
+| `B`        | Move cursor five words forward                            |
 
 ## 2 Window Management
 
 ### 2.1 Create Window Through Split Screen
 
-| Shortcut    | Action                                                                      |
+| Shortcut    | Effect                                                                      |
 |-------------|-----------------------------------------------------------------------------|
 | `s` `k`     | Create a new horizontal split screen and place it above the current window  |
 | `s` `j`     | Create a new horizontal split screen and place it below the current window  |
@@ -89,7 +55,7 @@ Clean and modularized neovim config files.
 
 ### 2.2 Moving the Cursor Between Different Windows
 
-| Shortcut      | Action                         |
+| Shortcut      | Effect                         |
 |---------------|--------------------------------|
 | `SPACE` + `w` | Move cursor to the next window |
 | `SPACE` + `l` | Move cursor one window left    |
@@ -99,11 +65,16 @@ Clean and modularized neovim config files.
 
 ### 2.3 Resizing Different Windows
 
-Use the arrow keys to resize the current window.
+| Shortcut  | Effect             |
+|-----------|--------------------|
+| `Alt` `h` | Vertical resize -3 |
+| `Alt` `j` | Resize +3          |
+| `Alt` `k` | Resize -3          |
+| `Alt` `l` | Vertical resize -3 |
 
 ## 3 Tab Management
 
-| Shortcut    | Action           |
+| Shortcut    | Effect           |
 |-------------|------------------|
 | `t` `b`     | Create a new tab |
 | `t` `h`     | Go one tab left  |
@@ -117,35 +88,33 @@ Use the arrow keys to resize the current window.
 
 #### [coc](https://github.com/neoclide/coc.nvim)
 
-| Shortcut        | Action                                           |
-|-----------------|--------------------------------------------------|
-| `gd`            | Go to definition                                 |
-| `gr`            | List references                                  |
-| `gy`            | Go to type definition                            |
-| `SPACE` `r` `n` | Rename a variable                                |
-| `Ctrl` `l`      | (in snippet) Previous Cursor position in snippet |
-| `Ctrl` `h`      | (in snippet) Next Cursor position in snippet     |
-| `t` `s`         | Translate word under cursor                      |
+| Shortcut        | Effect                              |
+|-----------------|-------------------------------------|
+| `gd`            | Go to definition                    |
+| `gh`            | List references                     |
+| `gD`            | Go to type definition               |
+| `K`             | Show documentation                  |
+| `SPACE` `r` `n` | Rename a variable                   |
+| `SPACE` `c` `f` | Format selected                     |
+| `Shift` `Tab`   | Previous Cursor position in snippet |
+| `Tab`           | Next Cursor position in snippet     |
+| `t` `s`         | Translate word under cursor         |
 
 ### 4.2 Text Editing Plugins
 
 #### [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 
-| Shortcut        | Action            |
+| Shortcut        | Effect            |
 |-----------------|-------------------|
 | `SPACE` `t` `m` | Toggle table mode |
 
 #### [undotree](https://github.com/mbbill/undotree)
 
-| Shortcut      | Action        |
+| Shortcut      | Effect        |
 |---------------|---------------|
 | `SPACE` + `u` | Open Undotree |
 | `j`           | Newer Version |
 | `k`           | Older Version |
-
-#### [vim-easy-align](https://github.com/junegunn/vim-easy-align)
-
-Press `g` `a` + **symbol** in normal or visual mode to align text based on **symbol**.
 
 #### [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
 
@@ -155,13 +124,15 @@ In `markdown` files, type `:Gen` then tab, you'll see your options.
 
 #### [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 
-Press `SPACE` `f` to search or replace in cwd.
+| Shortcut      | Effect            |
+|---------------|-------------------|
+| `SPACE` + `f` | Search or replace |
 
 ### 4.4 Git Related
 
 #### [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
-| Shortcut        | Action                            |
+| Shortcut        | Effect                            |
 |-----------------|-----------------------------------|
 | `SPACE` `g` `p` | **Show git hunk at current line** |
 | `SPACE` `g` `k` | Go to previous git hunk           |
@@ -170,9 +141,11 @@ Press `SPACE` `f` to search or replace in cwd.
 
 ### 4.5 Others
 
-#### [goyo - Work without distraction](https://github.com/junegunn/goyo.vim)
+#### [goyo](https://github.com/junegunn/goyo.vim)
 
-Press `g` `y` to toggle Goyo.
+| Shortcut | Effect      |
+|----------|-------------|
+| `g` `y`  | toggle Goyo |
 
 #### [figlet](https://github.com/cmatsuoka/figlet)
 
@@ -224,6 +197,6 @@ Press `t` `x` and enter your text.
 
 ## Reference
 
-Thanks to [@chemzqm](https://github.com/chemzqm/vimrc)
-[@skywind3000](https://github.com/skywind3000/vim)
-[@theniceboy](https://github.com/theniceboy/nvim)
+- [chemzqm/vimrc](https://github.com/chemzqm/vimrc)
+- [skywind3000/vim](https://github.com/skywind3000/vim)
+- [theniceboy/nvim](https://github.com/theniceboy/nvim)

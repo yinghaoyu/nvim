@@ -53,9 +53,10 @@
   Plug 'RRethy/vim-illuminate'
   Plug 'ryanoasis/vim-devicons'
   Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'Yggdroot/indentLine'
 
   " status line
-  Plug 'raining888/eleline.vim'
+  Plug 'yinghaoyu/eleline.vim'
   Plug 'ojroques/vim-scrollstatus'
 
   " undo tree
