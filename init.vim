@@ -40,7 +40,7 @@
   Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
 
   " vim color
-  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+  Plug 'yinghaoyu/nvim-deus'
 
   " editor enhancement
   Plug 'godlygeek/tabular'

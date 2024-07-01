@@ -25,8 +25,8 @@ endif
 " dress up {{
   set termguicolors " enable true colors support
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  if !empty(glob($HOME.'/.config/nvim/plugged/catppuccin/colors/catppuccin_mocha.vim'))
-    colorscheme catppuccin_mocha
+  if !empty(glob($HOME.'/.config/nvim/plugged/nvim-deus/colors/deus.lua'))
+    colorscheme deus
   endif
   hi NonText ctermfg=gray guifg=grey10
 " }}
