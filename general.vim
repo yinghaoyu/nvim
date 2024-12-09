@@ -201,6 +201,10 @@ endif
   nnoremap <F4> :set wrap!<CR>
   nnoremap <F10> :call SynGroup()<CR>
 
+  " quickly comment
+  nnoremap <LEADER>cc :call ToggleComment()<CR>
+  vnoremap <LEADER>cc :call ToggleComment()<CR>
+
   func! RunCode()
     exec "w"
     if &filetype == 'asm'
@@ -241,8 +245,17 @@ endif
     endif
   endfunc
 
-  function! SynGroup()
+  func! SynGroup()
     let l:s = synID(line('.'), col('.'), 1)
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
-  endfun
+  endfunc
+
+  " TODO: Other language supports.
+  func! ToggleComment()
+    if getline('.') =~ '^\s*//'
+        exec 'normal! ^xx'
+    else
+        exec 'normal! I//'
+    endif
+  endfunc
 " }}

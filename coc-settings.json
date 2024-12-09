@@ -99,7 +99,7 @@
       }
     },
     "clangd": {
-      "command": "clangd-15",
+      "command": "clangd",
       "rootPatterns": [
         "compile_flags.txt",
         "compile_commands.json"
