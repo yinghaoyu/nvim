@@ -1,5 +1,5 @@
 {
-  "coc.preferences.extensionUpdateCheck": "daily",
+  "extensions.updateCheck": "daily",
   "coc.preferences.messageLevel": "error",
   "inlayHint.enable": false,
   "suggest.invalidInsertCharacters": [
