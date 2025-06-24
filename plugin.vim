@@ -70,7 +70,28 @@
 
   " symbol renaming.
   nmap <leader>rn <Plug>(coc-rename)
-  vmap <leader>cf <Plug>(coc-format-selected)
+
+  " format selected
+  " vmap <leader>cf <Plug>(coc-format-selected)
+
+  " format on save
+  let g:coc_format_on_save = 1
+
+  nnoremap <silent> <A-f> :call ToggleFormatOnSave()<CR>
+  function! ToggleFormatOnSave()
+    if exists('g:coc_format_on_save')
+      let g:coc_format_on_save = !g:coc_format_on_save
+      echo "Format on save is now " . (g:coc_format_on_save ? 'enabled' : 'disabled')
+    endif
+  endfunction
+
+  augroup CocFormat
+    autocmd!
+    autocmd BufWritePre *
+      \ if g:coc_format_on_save |
+      \   exe "CocCommand editor.action.formatDocument" |
+      \ endif
+  augroup END
 " }}
 
 " vista.vim {{
